@@ -1,0 +1,23 @@
+/* resources/views/phones/style.css */
+h1{
+    text-align: center;
+    margin: 20px auto
+}
+.card-container {
+    width: 80%;
+    margin:auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Három oszlop egy sorban */
+    gap: 20px; /* Oszlopok közötti térköz */
+}
+
+.card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+}
