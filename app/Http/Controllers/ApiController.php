@@ -40,7 +40,7 @@ class ApiController extends Controller
     
 public function getTypeParts($typeId)
 {
-    $typeParts = TypePart::where('type_part_id', $typeId)->get();
+    $typeParts = TypePart::where('type_id', $typeId)->get();
     // A typeParts tömb utolsó eleme
     $lastTypePart = $typeParts->last();
 
