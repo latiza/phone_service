@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Brand;
+use App\Models\PhoneModel;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -49,4 +50,9 @@ class BrandController extends Controller
 
         // ...
     }
+    public function getPhoneModels($brandId)
+{
+    $phoneModels = PhoneModel::where('brand_id', $brandId)->get();
+    return response()->json($phoneModels);
+}
 }
